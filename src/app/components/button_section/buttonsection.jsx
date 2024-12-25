@@ -4,7 +4,7 @@ const ButtonSection = (props) => {
     return(
 
         <>
-        <div className="w-[6rem] p-2 my-3 " >
+        <div className=" w-[6rem] p-2 my-3 " >
             <Link className={style} href={link} >{children}</Link>
         </div>
 

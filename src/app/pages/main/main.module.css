@@ -1,0 +1,59 @@
+.buttonContainer {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left:1rem ;
+    padding-right:1rem ;
+    gap: 1rem;
+}
+
+.buttonContainer button {
+
+    font-size: large;
+
+    padding-left: 7;
+    padding-right: 7;
+    padding-top: 2;
+    padding-bottom: 2;
+    justify-content: center;
+    align-items: center;
+    transition: all;
+    transition-duration: 100ms;
+}
+
+.successButton:hover {
+    border-bottom: 2 solid;
+    border-color: var(--success);
+    font-weight: 500;
+}
+
+.failedButton:hover {
+    border-bottom: 2 solid;
+    font-weight: 500;
+    border-color: var(--failed);
+}
+
+.mainTitle {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+}
+
+.how {
+    position: relative;
+    animation: how 1000ms ease-in-out;
+}
+
+.are {
+    position: relative;
+    animation: are 1200ms ease-in-out;
+}
+
+@keyframes how {
+    0% {opacity: 0; top: -20;}
+    100% {opacity: 1; top: 0;}
+}
+@keyframes are {
+    0% {opacity: 0; top: -20;}
+    100% {opacity: 1; top: 0;}
+}

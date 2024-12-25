@@ -1,0 +1,28 @@
+.mainSide {
+    display: flex;
+    background-color: var(--sidebar);
+    flex-direction: column;
+    height: 100vh;
+    width: 11rem;
+    position: fixed;
+    animation: all;
+}
+
+.mainSide:hover {
+    box-shadow: 5px 1px 90px;
+    animation-duration: 300ms;
+}
+
+.divLuar {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.header {
+    padding: 0.5rem;
+}
+
+.mainDalam {
+    margin-left: 1.25rem;
+}

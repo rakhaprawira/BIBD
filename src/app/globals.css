@@ -3,14 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --background: #E3E3E3;
+  --background: rgba(215, 215, 215);;
+  --card: rgba(255, 255, 255);
   --text: #383838;
   --text2: #9E9E9E  ;
   --sidebar: #1F1F1F;
+  --success: #4BCA81;
+  --failed: #F44336;
 }
 
 body {
   color: var(--text);
   background: var(--background);
   font-family: var(--font-geist-sans);
+}
+
+.navbarajg {
+  margin-left: 13rem;
+}
+
+.mainTitle {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: bold;
 }

@@ -1,12 +1,12 @@
-import Link from "next/link"
+"use client"
 
 const Button = (props) => {
-    const {children, padding, link} = props
+    const {children, padding, action} = props
     return(
         <>
         
         <div className={padding} >
-            <Link href={link} className="border-2 border-[var(--text)] font-bold py-1.5 px-2.5 rounded " >{children}</Link>
+            <button onClick={action} className="border-2 border-[var(--text)] font-bold py-0.5 px-1 w-full rounded hover:bg-[var(--text)] hover:text-[var(--background)] transition duration-200 " >{children}</button>
         </div>
         
         </>
