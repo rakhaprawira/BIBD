@@ -1,4 +1,4 @@
-"use client"
+
 import Button from "../button/button"
 import { redirect } from "next/navigation"
 import style from "./card.module.css"   
@@ -10,7 +10,7 @@ const Card = (props) => {
         <div className="card">
             <div className={style.cardBody}>
                 <div className="img">
-                    <img src={img} alt="image" />
+                    <video src={img} alt="image" />
                 </div>
                 <div className={style.isi}>
                 <h2 className="card-title">{children}</h2>

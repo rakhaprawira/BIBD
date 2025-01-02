@@ -1,6 +1,19 @@
+"use client"
 import Card from "@/app/components/card/card"
+import { useEffect, useState } from "react"
 
 const Videos = () => {
+const [data, setData] = useState([])
+useEffect(() => {
+    fetch(process.env.NEXT_PUBLIC_API)
+    .then(res => {
+        return res.json()
+    })
+    .then((data) => setData(data))
+},[])
+
+
+
     return(
         <>
         
@@ -9,9 +22,15 @@ const Videos = () => {
             <h1 className="font-bold text-4xl" >Video</h1>
             </main>
             <section className="flex flex- wrap " >
-                <Card buttonLink="/pages/video_player" deskripsi="Nadia presentasi mengenai classmeet walaupun dia ga ngerti" img={process.env.IMG_Nadia} >
-                    Presentasi Profesor
+                { data.length > 0 ? data.map((r) => {
+                return (
+                <Card key={r.id} buttonLink={"/pages/video_player/" + r.url} deskripsi={r.deskripsi} img={r.fullUrl} >
+                    {r.title}
                 </Card>
+                )})
+                :
+                (<h1>Loading...</h1>)
+            }
             </section>
         </div>
         

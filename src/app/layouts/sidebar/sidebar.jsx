@@ -21,7 +21,7 @@ const Sidebar = () => {
                     </h1>
                 </ButtonSection>
                 <ButtonSection style="text-[var(--text2)] text-lg" link="/pages/videos" >
-                    <h1>Videos</h1>
+                    Videos
                 </ButtonSection>
             </main>
         </div>
