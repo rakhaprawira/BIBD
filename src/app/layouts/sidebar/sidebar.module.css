@@ -2,25 +2,40 @@
     display: flex;
     background-color: var(--sidebar);
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 11rem;
     position: fixed;
     animation: all;
+    z-index: 20;
 }
 
-.mainSide:hover {
-    box-shadow: 5px 1px 90px;
-    animation-duration: 300ms;
+.tombol {
+    display: none;
 }
 
+@media screen and (max-width: 852px) {
+    .mainSide {
+        width: 35%;
+    }
+
+    .tombol {
+        display: flex;
+    }
+    
+}
 .divLuar {
     display: flex;
     justify-content: start;
     flex-direction: column;
 }
 
+
 .header {
     padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text2);
 }
 
 .mainDalam {

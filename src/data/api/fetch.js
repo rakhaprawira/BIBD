@@ -1,9 +1,12 @@
-const { useState, use } = require("react");
+import { useEffect, useState } from "react"
 
-async function getData(url) {
-    const e = await fetch(url);
-    const r = await e.json();
-    return(r)
-}
+const [data, setData] = useState([])
+useEffect(() => {
+    fetch(process.env.NEXT_PUBLIC_API)
+    .then(res => {
+        return res.json()
+    })
+    .then((data) => setData(data))
+},[])
 
-export default getData
+export default data

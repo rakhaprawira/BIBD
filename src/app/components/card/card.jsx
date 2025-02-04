@@ -2,15 +2,15 @@
 import Button from "../button/button"
 import { redirect } from "next/navigation"
 import style from "./card.module.css"   
-const Card = (props) => {
+const   Card = (props) => {
     const {children, img, deskripsi, buttonLink} = props
     return(
         <>
         
-        <div className="card">
+        <div className={style.card}>
             <div className={style.cardBody}>
-                <div className="img">
-                    <video src={img} alt="image" />
+                <div>
+                    <video src={"https://cdn.videy.co/" + img + ".mp4"} alt="image" />
                 </div>
                 <div className={style.isi}>
                 <h2 className="card-title">{children}</h2>

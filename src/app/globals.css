@@ -15,11 +15,15 @@
 body {
   color: var(--text);
   background: var(--background);
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-inter);
 }
 
 .navbarajg {
-  margin-left: 13rem;
+  margin-left: 13.5rem;
+
+  @media screen and (max-width: 852px) {
+    margin: 0;
+  }
 }
 
 .mainTitle {

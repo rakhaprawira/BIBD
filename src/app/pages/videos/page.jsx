@@ -21,10 +21,10 @@ useEffect(() => {
             <main className="flex p-4 flex-col justify-center items-center" >
             <h1 className="font-bold text-4xl" >Video</h1>
             </main>
-            <section className="flex flex- wrap " >
+            <section className="flex flex-wrap justify-center items-center" >
                 { data.length > 0 ? data.map((r) => {
                 return (
-                <Card key={r.id} buttonLink={"/pages/video_player/" + r.url} deskripsi={r.deskripsi} img={r.fullUrl} >
+                <Card key={r.id} buttonLink={"/pages/video_player/" + r.url} deskripsi={r.deskripsi} img={r.url} >
                     {r.title}
                 </Card>
                 )})

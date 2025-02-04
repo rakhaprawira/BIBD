@@ -1,15 +1,27 @@
-.cardBody {
-    display: flex;
+.card {
     background-color: var(--card);
-    height: 15rem;
-    width: fit-content;
+    height: fit-content;
+    min-width: min-content;
+    max-width: 95%;
     padding: 1rem;
     border-radius: 7px;
-    transition: all;
-    transition-duration: 200ms;
     gap: 1rem;
     box-shadow: 1px 1px 15px gray;
-    margin: 2rem;
+    margin: 1rem;
+    transition: all;
+    transition-duration: 200ms;
+
+    @media screen and (max-width: 852px) {
+        min-width: 95%;
+    }
+}
+
+.cardBody {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .cardBody:hover {
@@ -22,7 +34,7 @@
 }
 
 .cardBody h2 {
-    font-size: large;
+    font-size: medium;
     font-weight: 600;
 }
 
@@ -36,7 +48,7 @@
 }
 
 .isi{
-    max-width: 15rem;
+    max-width: 12rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

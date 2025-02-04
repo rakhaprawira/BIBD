@@ -1,3 +1,4 @@
+import Link from "next/link"
 import style from "./main.module.css"
 
 const Main = () => {
@@ -5,10 +6,10 @@ const Main = () => {
     return (
         <>
 <main className="navbarajg flex flex-col justify-center items-center min-h-screen" >
-    <h1 className={style.mainTitle} >  <span className={style.how} >How</span> <span className={style.are} >are</span> you?</h1>
+    <h1 className={style.mainTitle} >Berapa umur kamu?</h1>
     <div className={style.buttonContainer}>
-        <button className={style.successButton} >Good enough</button>
-        <button className={style.failedButton} >Nah</button>
+        <Link href="/pages/videos" className={style.successButton} >Diatas 18</Link>
+        <Link href="/pages/favorite" className={style.failedButton} >Dibawah 18</Link>
     </div>
 </main>
         </>
