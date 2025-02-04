@@ -27,6 +27,9 @@ const Sidebar = () => {
                 <ButtonSection link="/pages/videos" >
                     Videos
                 </ButtonSection>
+                <ButtonSection link="/pages/bibd_music" >
+                    Music
+                </ButtonSection>
             </main>
         </div>
         </aside>
