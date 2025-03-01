@@ -22,7 +22,7 @@ const handleFullscreen = () => {
 
     return(
         <>
-        <div className=" navbarajg flex flex-col min-h-screen justify-center items-center">
+        <div className=" w-full flex flex-col min-h-screen justify-center items-center">
         <video className="max-w-[80%]" controls ref={content} width={400}>
             <source src={"https://cdn.videy.co/" + params.videoUrl + ".mp4"} type="video/mp4" />
         </video>

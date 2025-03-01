@@ -5,7 +5,7 @@ const Main = () => {
 
     return (
         <>
-<main className="navbarajg flex flex-col justify-center items-center min-h-screen" >
+<main className=" w-full flex flex-col justify-center items-center min-h-screen" >
     <h1 className={style.mainTitle} >Berapa umur kamu?</h1>
     <div className={style.buttonContainer}>
         <Link href="/pages/videos" className={style.successButton} >Diatas 18</Link>

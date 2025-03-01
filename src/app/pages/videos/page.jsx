@@ -17,7 +17,7 @@ useEffect(() => {
     return(
         <>
         
-        <div className="navbarajg" >
+        <div className="w-full" >
             <main className="flex p-4 flex-col justify-center items-center" >
             <h1 className="font-bold text-4xl" >Video</h1>
             </main>

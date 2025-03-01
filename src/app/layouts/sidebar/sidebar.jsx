@@ -1,47 +1,43 @@
-"use client"
-import Link from "next/link"
 import style from "./sidebar.module.css"
-import ButtonSection from "../../components/button_section/buttonsection"
-import Button from "@/app/components/button/button"
-import { useState } from "react"
+import Link from "next/link"
 
 
 const Sidebar = () => {
-    const [open, setOpen ] = useState(true);
     return(
         <>
-            {open ? (
-            <aside className={style.mainSide} >
-            <div className={style.divLuar} >
-            <header className={style.header} >
-                <h1 className="text-2xl px-3 max-[852px]:text-lg text-[var(--text2)] font-bold" >BIBD</h1>
-                <button className={style.tombol} onClick={() => setOpen(!open)} >X</button>
-            </header>
-            <main className={style.mainDalam} >
-                <ButtonSection link="/pages/main" >
-                    Home
-                </ButtonSection>
-                <ButtonSection link="/pages/add-video" >
-                    Add Videos
-                </ButtonSection>
-                <ButtonSection link="/pages/videos" >
-                    Videos
-                </ButtonSection>
-                <ButtonSection link="/pages/bibd_music" >
-                    Music
-                </ButtonSection>
-            </main>
-        </div>
-        </aside>
-        ) : (
-            <>
-
-                <div>
-                    <button onClick={() => setOpen(!open)} >MENU</button>
-                </div>
-
-            </>
-        ) }
+            <div className="flex" >
+            <aside className="h-screen w-60" >
+                <nav className="h-full flex flex-col border-r-2 border-[#383838] shadow-xl" >
+                    <div className="logo flex items-center border-b-2 border-[#383838] px-4 py-3 ">
+                        <h1 className="text-3xl font-medium" >BIBD</h1>
+                    </div>
+                    <div className="container h-full overflow-auto overflow-x-hidden">
+                        <ul className="flex flex-col gap-4 p-4 text-lg font-medium ">
+                            <Link href="/pages/main" className={style.list}>
+                                🏠 Home
+                            </Link>
+                            <Link href="/pages/add-video" className={style.list}>
+                                📷 Add Video
+                            </Link>
+                            <Link href="/pages/videos" className={style.list}>
+                                🎥 Video
+                            </Link>
+                        </ul>
+                        </div>
+                        <div className="footer border-t-2 border-[#383838] ">
+                            <div className="user flex gap-1 p-3 ">
+                                <div className="photo bg-blue-300 p-2 rounded font-bold ">
+                                        <h1 className="text-blue-700" >BRI</h1>
+                                </div>
+                                <div className="idnt leading-4 bg-gray-300 p-2 rounded ">
+                                    <h1 className="font-semibold" >RPY. S.Kom. MT</h1>
+                                    <h2 className="text-xs" >Direktur Utama</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </aside>
+            </div>
         </>
     )
 }

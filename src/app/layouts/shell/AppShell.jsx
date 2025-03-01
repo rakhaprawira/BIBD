@@ -9,8 +9,10 @@ const AppShell = (props) => {
     return (
 
         <>
-        { !disableSidebar.includes(pathname) && <Sidebar/> }
-        {children}
+        <div className="flex">
+        { !disableSidebar.includes(pathname) && <Sidebar />}
+                {children}
+        </div>
         </>
 
     )

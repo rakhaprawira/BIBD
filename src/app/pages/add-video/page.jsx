@@ -3,10 +3,9 @@ import Form from "@/app/components/up-form/form"
 const Favorite = () => {
     return(
         <>
-        <div className="flex justify-center items-center min-h-[90vh]" >
-            <main className=" navbarajg flex flex-col bg-[var(--card)] rounded-lg shadow-xl w-[80%] justify-center items-center h-[50vh]
-            " >
-                <div className="judul m-[3rem] bg-red-500">
+        <div className="flex w-full justify-center items-center" >
+            <main className="flex flex-col bg-[var(--card)] rounded-lg shadow-xl w-[80%] justify-center items-center h-[50vh]" >
+                <div className="judul m-[3rem] ">
                 <h1 className="font-bold text-2xl" >Add your own video</h1> 
                 </div>
                 <div>
