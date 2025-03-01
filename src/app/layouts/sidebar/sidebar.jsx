@@ -6,7 +6,7 @@ const Sidebar = () => {
     return(
         <>
             <div className="flex" >
-            <aside className="h-screen w-60" >
+            <aside className={style.aside} >
                 <nav className="h-full flex flex-col border-r-2 border-[#383838] shadow-xl" >
                     <div className="logo flex items-center border-b-2 border-[#383838] px-4 py-3 ">
                         <h1 className="text-3xl font-medium" >BIBD</h1>
