@@ -1,24 +1,20 @@
-:root{
-    --black: #383838;
-    --white: #ffffff;
-}
 
 html {
     font-family: inter;
-    color: var(--black);
-    background-color: var(--white);
+    color: #383838;
+    background-color: #ffffff;
 }
 
 .list {
     padding: 0.5rem;
     transition-duration: 300ms;
-    box-shadow: var(--black) 2px 2px 5px;
-    border: var(--black) 2px solid;
+    box-shadow: #383838 2px 2px 5px;
+    border: #383838 2px solid;
     border-radius: 5px;
 }
 
 .list:hover{
-    background-color: var(--black);
-    color: var(--white);
+    background-color: #383838;
+    color: #ffffff;
     box-shadow: none;
 }
