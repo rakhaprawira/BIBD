@@ -24,7 +24,7 @@ useEffect(() => {
             <section className="flex flex-wrap justify-center items-center" >
                 { data.length > 0 ? data.map((r) => {
                 return (
-                <Card key={r.id} buttonLink={"/pages/video_player/" + r.url} deskripsi={r.deskripsi} img={r.url} >
+                <Card key={r.id} provider={r.provider} buttonLink={"/pages/video_player/" + r.url} deskripsi={r.deskripsi} img={r.url} >
                     {r.title}
                 </Card>
                 )})

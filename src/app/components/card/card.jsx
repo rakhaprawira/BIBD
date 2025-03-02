@@ -3,14 +3,19 @@ import Button from "../button/button"
 import { redirect } from "next/navigation"
 import style from "./card.module.css"   
 const   Card = (props) => {
-    const {children, img, deskripsi, buttonLink} = props
+    const {children, img, deskripsi, buttonLink, provider} = props
     return(
         <>
         
+
         <div className={style.card}>
             <div className={style.cardBody}>
                 <div>
-                    <video src={"https://cdn.videy.co/" + img + ".mp4"} alt="image" />
+                    {  provider == "videy" ?
+                        (<video src={"https://cdn.videy.co/" + img + ".mp4"} alt="image" />)
+                    :
+                        (<video src={"https://dochi.co/uploads/" + img + ".mp4"} alt="image" />)
+                    } 
                 </div>
                 <div className={style.isi}>
                 <h2 className="card-title">{children}</h2>

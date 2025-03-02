@@ -37,6 +37,7 @@ const handleSubmit = async (e) => {
     } catch (error) {
     console.error(error);
     alert('Terjadi kesalahan saat mengirim data');
+    console.log(data);
     }
 
 
@@ -48,9 +49,10 @@ const handleSubmit = async (e) => {
         <div>
             <form  className="flex flex-col" method="post">
                 <input onChange={handleChange} type="text" name="url" placeholder="Url" />
+                {/* <Input /> */}
                 <input onChange={handleChange} type="text" name="title" placeholder="Judul" />
                 <input onChange={handleChange} type="text" name="deskripsi" placeholder="Deskripsi" />
-                <input type="submit" value="Submit" />
+                <input type="submit" onClick={handleSubmit} value="Submit" />
             </form>
         </div>
         
