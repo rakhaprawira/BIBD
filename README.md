@@ -12,3 +12,4 @@ To run tests, run the following command
   npm run dev
 ```
 
+But unfortunately you cant do this Cause i keep the local env 😁
