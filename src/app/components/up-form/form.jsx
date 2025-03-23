@@ -21,7 +21,7 @@ const handleSubmit = async (e) => {
     e.preventDefault();
     try {
         // Mengirim data ke API menggunakan fetch
-        const response = await fetch( "https://6634be239bb0df2359a29552.mockapi.io/data/video", {
+        const response = await fetch(process.env.NEXT_PUBLIC_API, {
         method: 'POST', // Metode HTTP
         headers: {
             'Content-Type': 'application/json', // Tipe konten yang dikirim
